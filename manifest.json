@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix Auto Skip Intro",
+  "version": "1.0",
+  "description": "Automatically skips intros and recaps, and clicks next episode.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://www.netflix.com/*"],
+      "js": ["netflix.js"]
+    },
+    {
+      "matches": ["*://www.disneyplus.com/*"],
+      "js": ["disneyPlus.js"]
+    },
+    {
+      "matches": ["*://www.primevideo.com/*"],
+      "js": ["primeVideo.js"]
+    }
+  ]
+}
