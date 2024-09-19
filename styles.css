@@ -1,8 +1,26 @@
+/* popup.css */
+
 body {
   font-family: Arial, sans-serif;
-  width: 200px;
+  margin: 0;
+  padding: 0;
+  width: 200px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4f4f4; /* Light background for a clean look */
 }
+
 label {
   display: block;
   margin: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
 }
