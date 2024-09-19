@@ -3,19 +3,21 @@
   "name": "Netflix Auto Skip Intro",
   "version": "1.0",
   "description": "Automatically skips intros and recaps, and clicks next episode.",
-  "permissions": [],
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "images/image16.png", 
+    "48": "images/image48.png",  
+    "128": "images/image128.png" 
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
   "content_scripts": [
     {
       "matches": ["*://www.netflix.com/*"],
       "js": ["netflix.js"]
-    },
-    {
-      "matches": ["*://www.disneyplus.com/*"],
-      "js": ["disneyPlus.js"]
-    },
-    {
-      "matches": ["*://www.primevideo.com/*"],
-      "js": ["primeVideo.js"]
     }
   ]
 }
