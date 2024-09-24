@@ -3,9 +3,6 @@
   "name": "Netflix Intro Skipper",
   "version": "1.0",
   "description": "Automatically skips intros.",
-  "permissions": [
-    "storage"
-  ],
   "icons": {
     "16": "images/image16.png", 
     "48": "images/image48.png",  
